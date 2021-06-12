@@ -79,7 +79,7 @@ export default {
     right: 228px;
     width: 390px;
     height: 390px;
-    background: url(../assets/images/QR_Code.jpg);
+    background: url(../assets/images/QR_Code.png);
     background-size: cover;
   }
 }
