@@ -41,7 +41,7 @@ export default {
     position: absolute;
     top: 99px;
     left: 237px;
-    background: url(../assets/images/Group_4.jpg);
+    background: url(../assets/images/Group_4.png);
     background-size: cover;
     height: 140px;
     width: 498px;

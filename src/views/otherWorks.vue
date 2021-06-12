@@ -19,7 +19,7 @@ export default {};
   .other_works_title {
     width: 100%;
     height: 555px;
-    background: url(../assets/images/Group_3.jpg);
+    background: url(../assets/images/Group_3.png);
     background-size: cover;
   }
   .other_works_main {

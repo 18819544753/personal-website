@@ -110,7 +110,7 @@ export default {
     position: absolute;
     top: 108px;
     right: 256px;
-    background: url(../assets/images/Group_2.jpg);
+    background: url(../assets/images/Group_2.png);
     background-size: cover;
     height: 140px;
     width: 498px;
