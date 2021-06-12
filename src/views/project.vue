@@ -110,7 +110,7 @@ export default {
     position: absolute;
     top: 108px;
     right: 256px;
-    background: url(../assets/images/Group_2.png);
+    background: url(../assets/images/Group_2.jpg);
     background-size: cover;
     height: 140px;
     width: 498px;
@@ -158,7 +158,7 @@ export default {
       width: 100%;
       height: 500px;
       margin-bottom: 66px;
-      background: url(../assets/images/goodai_1.png) #000000;
+      background: url(../assets/images/goodai_1.jpg) #000000;
       background-size: cover;
       mix-blend-mode: normal;
       border: 16px solid #24262d;
@@ -172,19 +172,19 @@ export default {
       border: 16px solid #5d616d;
     }
     .goodai_item_two {
-      background: url(../assets/images/goodai_2.png) #000000;
+      background: url(../assets/images/goodai_2.jpg) #000000;
       background-size: cover;
     }
     .goodai_item_three {
-      background: url(../assets/images/goodai_3.png) #000000;
+      background: url(../assets/images/goodai_3.jpg) #000000;
       background-size: cover;
     }
     .goodai_item_four {
-      background: url(../assets/images/goodai_4.png) #000000;
+      background: url(../assets/images/goodai_4.jpg) #000000;
       background-size: cover;
     }
     .goodai_item_five {
-      background: url(../assets/images/goodai_5.png) #000000;
+      background: url(../assets/images/goodai_5.jpg) #000000;
       background-size: cover;
     }
   }

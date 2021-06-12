@@ -41,7 +41,7 @@ export default {
     position: absolute;
     top: 99px;
     left: 237px;
-    background: url(../assets/images/Group_4.png);
+    background: url(../assets/images/Group_4.jpg);
     background-size: cover;
     height: 140px;
     width: 498px;
@@ -79,7 +79,7 @@ export default {
     right: 228px;
     width: 390px;
     height: 390px;
-    background: url(../assets/images/QR_Code.png);
+    background: url(../assets/images/QR_Code.jpg);
     background-size: cover;
   }
 }

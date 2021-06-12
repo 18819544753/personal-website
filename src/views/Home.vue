@@ -50,7 +50,7 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(../assets/images/bg.png);
+  background: url(../assets/images/bg.jpg);
   background-size: 2000px 1871px;
   background-repeat: no-repeat;
   animation: move 20s;

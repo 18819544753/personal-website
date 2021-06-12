@@ -14,12 +14,12 @@ export default {};
   position: relative;
   margin-top: 200px;
   width: 100%;
-  background: url(../assets/images/other_works_bg.png) #fff;
+  background: url(../assets/images/other_works_bg.jpg) #fff;
   background-size: 100% 100%;
   .other_works_title {
     width: 100%;
     height: 555px;
-    background: url(../assets/images/Group_3.png);
+    background: url(../assets/images/Group_3.jpg);
     background-size: cover;
   }
   .other_works_main {
