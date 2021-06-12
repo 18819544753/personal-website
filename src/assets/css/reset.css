@@ -1,15 +1,3 @@
-@font-face {
-  font-family: PingFang-SC-Light;
-  src: url('/src/assets/font/PingFang-SC-Light.ttf'), url('/src/assets/font/PingFang\ SC\ Light.otf');
-  /* IE9+ */
-}
-
-@font-face {
-  font-family: Arial-Black;
-  src: url('/src/assets/font/Arial\ Black.TTF')
-    /* IE9+ */
-}
-
 body,
 div,
 dl,
