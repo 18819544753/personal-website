@@ -95,7 +95,7 @@ export default {
   .title {
     width: 100%;
     height: 384px;
-    background: url(../assets/images/firstScreen_title.jpg) #030910;
+    background: url(../assets/images/firstScreen_title.png) #030910;
     background-size: 100% 100%;
   }
 }
