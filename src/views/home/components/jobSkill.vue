@@ -31,12 +31,15 @@ export default {
   },
   methods: {
     handleScroll(e) {
-      // console.log(document.querySelector(".job_skill>ul").offsetTop);
+      console.log(document.querySelector(".job_skill>ul").offsetTop);
       let skillListTop = document.querySelector(".job_skill>ul").offsetTop;
+      console.log(e.target.scrollTop);
+      console.log(skillListTop + 300);
       if (
         e.target.scrollTop > skillListTop + 300 &&
         e.target.scrollTop < skillListTop + 400
       ) {
+        console.log('asd');
         document.querySelector(".job_skill>ul").className = "job_skill_list";
       }
     },
@@ -57,7 +60,7 @@ export default {
     position: absolute;
     top: 99px;
     left: 237px;
-    background: url(../assets/images/Group_1.png);
+    background: url("@{url-prefix}/images/Group_1.png");
     background-size: cover;
     height: 140px;
     width: 498px;
@@ -189,7 +192,7 @@ export default {
       -moz-animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
-      background: url(../assets/images/iconImg/icon1.png);
+      background: url("@{url-prefix}/iconImg/icon1.png");
       background-size: cover;
     }
     .icon2 {
@@ -205,7 +208,7 @@ export default {
       -moz-animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
-      background: url(../assets/images/iconImg/icon2.png);
+      background: url("@{url-prefix}/iconImg/icon2.png");
       background-size: cover;
     }
     .icon3 {
@@ -221,7 +224,7 @@ export default {
       -moz-animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
-      background: url(../assets/images/iconImg/icon3.png);
+      background: url("@{url-prefix}/iconImg/icon3.png");
       background-size: cover;
     }
     .icon4 {
@@ -237,7 +240,7 @@ export default {
       -moz-animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
-      background: url(../assets/images/iconImg/icon4.png);
+      background: url("@{url-prefix}/iconImg/icon4.png");
       background-size: cover;
     }
     .icon5 {
@@ -253,7 +256,7 @@ export default {
       -moz-animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
-      background: url(../assets/images/iconImg/icon5.png);
+      background: url("@{url-prefix}/iconImg/icon5.png");
       background-size: cover;
     }
     .icon6 {
@@ -269,7 +272,7 @@ export default {
       -moz-animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
-      background: url(../assets/images/iconImg/icon6.png);
+      background: url("@{url-prefix}/iconImg/icon6.png");
       background-size: cover;
     }
     .icon7 {
@@ -285,7 +288,7 @@ export default {
       -moz-animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
-      background: url(../assets/images/iconImg/icon7.png);
+      background: url("@{url-prefix}/iconImg/icon7.png");
       background-size: cover;
     }
     .icon8 {
@@ -301,7 +304,7 @@ export default {
       -moz-animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
-      background: url(../assets/images/iconImg/icon8.png);
+      background: url("@{url-prefix}/iconImg/icon8.png");
       background-size: cover;
     }
   }

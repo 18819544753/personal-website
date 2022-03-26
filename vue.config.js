@@ -27,6 +27,13 @@ module.exports = {
       .set('@views', resolve('src/views'))
       .set('@store', resolve('src/store'));
   },
+  pluginOptions: {
+    // 添加下面这段。src/style/globalValue.less为存放变量的路径＋文件
+    'style-resources-loader': {
+      preProcessor: 'less',
+      patterns: [path.resolve(__dirname, "src/assets/css/globalValue.less")]
+    }
+  },
   css: {
     // extract: IS_PROD,
     // requireModuleExtension: true, // 去掉文件名中的 .module

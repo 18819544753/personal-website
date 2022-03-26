@@ -22,7 +22,7 @@
         v-for="(imgItem, imgIndex) in item.imgList"
         :key="imgIndex"
         class="project_item"
-        :style="{ background: `url(${$cdnUrl}/${imgItem}/project.jpg)` }"
+        :style="{ background: `url(${$cdnUrl}/project/${imgItem}.jpg)` }"
         @click="projectItemClick(imgItem)"
       ></div>
     </div>
@@ -37,14 +37,14 @@ export default {
       classNameList: [
         {
           name: "冠袋桌球",
-          imgList: ["goodai_1", "goodai_2", "goodai_3", "goodai_4", "goodai_5"],
+          imgList: ["goodaiMini", "goodai_2", "goodai_3", "goodai_4", "goodai_5"],
         },
         { name: "普汇健康", imgList: ["zqb"] },
         { name: "赚钱宝", imgList: ["phjk"] },
         { name: "立刻健康", imgList: ["lkjk"] },
         { name: "organic work", imgList: ["OW"] },
         { name: "金洛克智能锁", imgList: ["jlk"] },
-        { name: "WAX", imgList: ["goodai_1"] },
+        { name: "WAX", imgList: ["goodaiMini"] },
       ],
       isActive: 0,
     };
@@ -55,6 +55,7 @@ export default {
     },
     projectItemClick(name) {
       console.log(name);
+      this.$router.push({name:'goodaiMini'})
     },
   },
 };

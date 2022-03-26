@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import firstScreen from "./firstScreen.vue";
-import jobSkill from "./jobSkill.vue";
-import project from "./project.vue";
-import otherWorks from "./otherWorks.vue";
-import contactWay from "./contactWay.vue";
-import fixedNav from "../components/fixedNav.vue";
+import firstScreen from "./components/firstScreen.vue";
+import jobSkill from "./components/jobSkill.vue";
+import project from "./components/project.vue";
+import otherWorks from "./components/otherWorks.vue";
+import contactWay from "./components/contactWay.vue";
+import fixedNav from "@/components/fixedNav.vue";
 export default {
   name: "Home",
   components: {
@@ -51,7 +51,7 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(../assets/images/bg.jpg);
+  background: url("@{url-prefix}/bg.jpg");
   background-size: 2000px 1871px;
   background-repeat: no-repeat;
   animation: move 20s;

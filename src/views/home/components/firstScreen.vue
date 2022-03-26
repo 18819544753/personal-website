@@ -95,7 +95,7 @@ export default {
   .title {
     width: 100%;
     height: 384px;
-    background: url(../assets/images/firstScreen_title.png) #030910;
+    background: url("@{url-prefix}/firstScreen_title.png") #030910;
     background-size: 100% 100%;
   }
 }
@@ -122,7 +122,7 @@ export default {
   bottom: 0;
   left: 0;
   // z-index: -1;
-  background: url(../assets/images/bg.jpg);
+  background: url("@{url-prefix}/bg.jpg");
   background-size: 2000px 1871px;
   background-repeat: no-repeat;
   animation: move 20s;
