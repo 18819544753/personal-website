@@ -12,61 +12,18 @@
         {{ item.name }}
       </div>
     </div>
-    <div class="goodai_list" v-show="isActive == 0">
-      <div class="goodai_item_one"></div>
-      <div class="goodai_item_two"></div>
-      <div class="goodai_item_three"></div>
-      <div class="goodai_item_four"></div>
-      <div class="goodai_item_five"></div>
-    </div>
-    <div class="goodai_list" v-show="isActive == 1">
-      <!-- <div class="goodai_item_one"></div>
-      <div class="goodai_item_two"></div> -->
-      <div class="goodai_item_three"></div>
-      <div class="goodai_item_four"></div>
-      <div class="goodai_item_five"></div>
-    </div>
-    <div class="goodai_list" v-show="isActive == 2">
-      <!-- <div class="goodai_item_one"></div>
-      <div class="goodai_item_two"></div> -->
-      <div class="goodai_item_three"></div>
-      <div class="goodai_item_four"></div>
-      <div class="goodai_item_five"></div>
-    </div>
-    <div class="goodai_list" v-show="isActive == 3">
-      <!-- <div class="goodai_item_one"></div>
-      <div class="goodai_item_two"></div> -->
-      <div class="goodai_item_three"></div>
-      <div class="goodai_item_four"></div>
-      <div class="goodai_item_five"></div>
-    </div>
-    <div class="goodai_list" v-show="isActive == 4">
-      <!-- <div class="goodai_item_one"></div>
-      <div class="goodai_item_two"></div> -->
-      <div class="goodai_item_three"></div>
-      <div class="goodai_item_four"></div>
-      <div class="goodai_item_five"></div>
-    </div>
-    <div class="goodai_list" v-show="isActive == 5">
-      <!-- <div class="goodai_item_one"></div>
-      <div class="goodai_item_two"></div> -->
-      <div class="goodai_item_three"></div>
-      <div class="goodai_item_four"></div>
-      <div class="goodai_item_five"></div>
-    </div>
-    <div class="goodai_list" v-show="isActive == 6">
-      <!-- <div class="goodai_item_one"></div>
-      <div class="goodai_item_two"></div> -->
-      <div class="goodai_item_three"></div>
-      <div class="goodai_item_four"></div>
-      <div class="goodai_item_five"></div>
-    </div>
-    <div class="goodai_list" v-show="isActive == 7">
-      <!-- <div class="goodai_item_one"></div>
-      <div class="goodai_item_two"></div> -->
-      <div class="goodai_item_three"></div>
-      <div class="goodai_item_four"></div>
-      <div class="goodai_item_five"></div>
+    <div
+      v-for="(item, index) in classNameList"
+      :key="index"
+      class="goodai_list"
+      v-show="isActive == index"
+    >
+      <div
+        v-for="(imgItem, imgIndex) in item.imgList"
+        :key="imgIndex"
+        class="goodai_item_one"
+        :style="{ background: `url(${cdnUrl}/${imgItem}.jpg)` }"
+      ></div>
     </div>
   </div>
 </template>
@@ -76,14 +33,19 @@ export default {
   name: "project_experience",
   data() {
     return {
+      cdnUrl:
+        "https://cdn.jsdelivr.net/gh/18819544753/personal-website@develop/src/assets/images",
       classNameList: [
-        { name: "冠袋桌球" },
-        { name: "立刻健康" },
-        { name: "赚钱宝" },
-        { name: "普惠健康" },
-        { name: "organic work" },
-        { name: "金洛克智能锁" },
-        { name: "WAX" },
+        {
+          name: "冠袋桌球",
+          imgList: ["goodai_1", "goodai_2", "goodai_3", "goodai_4", "goodai_5"],
+        },
+        { name: "普汇健康", imgList: ["zqb"] },
+        { name: "赚钱宝", imgList: ["phjk"] },
+        { name: "立刻健康", imgList: ["lkjk"] },
+        { name: "organic work", imgList: ["OW"] },
+        { name: "金洛克智能锁", imgList: ["jlk"] },
+        { name: "WAX", imgList: ["goodai_1"] },
       ],
       isActive: 0,
     };
@@ -101,6 +63,7 @@ export default {
 </script>
 
 <style lang="less" scope>
+@url-prefix: "https://cdn.jsdelivr.net/gh/18819544753/personal-website@develop/src/assets/images";
 .project_experience {
   position: relative;
   width: 100%;
@@ -110,7 +73,7 @@ export default {
     position: absolute;
     top: 108px;
     right: 256px;
-    background: url(../assets/images/Group_2.png);
+    background: url("@{url-prefix}/Group_2.png");
     background-size: cover;
     height: 140px;
     width: 498px;
@@ -158,11 +121,12 @@ export default {
       width: 100%;
       height: 500px;
       margin-bottom: 66px;
-      background: url(../assets/images/goodai_1.jpg) #000000;
+      background-color: #000000;
       background-size: cover;
       mix-blend-mode: normal;
       border: 16px solid #24262d;
       box-shadow: 2px 3px 6px 2px rgba(0, 0, 0, 0.25);
+      background-size: cover;
     }
     .goodai_item_one:hover,
     .goodai_item_two:hover,
@@ -170,22 +134,6 @@ export default {
     .goodai_item_four:hover,
     .goodai_item_five:hover {
       border: 16px solid #5d616d;
-    }
-    .goodai_item_two {
-      background: url(../assets/images/goodai_2.jpg) #000000;
-      background-size: cover;
-    }
-    .goodai_item_three {
-      background: url(../assets/images/goodai_3.jpg) #000000;
-      background-size: cover;
-    }
-    .goodai_item_four {
-      background: url(../assets/images/goodai_4.jpg) #000000;
-      background-size: cover;
-    }
-    .goodai_item_five {
-      background: url(../assets/images/goodai_5.jpg) #000000;
-      background-size: cover;
     }
   }
   // .list_transiton {

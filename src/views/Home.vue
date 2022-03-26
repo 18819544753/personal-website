@@ -18,7 +18,7 @@ import contactWay from "./contactWay.vue";
 import fixedNav from "../components/fixedNav.vue";
 export default {
   name: "Home",
-  components: { 
+  components: {
     firstScreen,
     jobSkill,
     project,
@@ -37,6 +37,7 @@ export default {
 .home {
   position: relative;
   width: 100%;
+  scroll-behavior: smooth;
   // height: 100%;
   background-color: #030910;
 }
