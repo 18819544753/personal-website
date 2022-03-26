@@ -37,10 +37,16 @@ export default {
       classNameList: [
         {
           name: "冠袋桌球",
-          imgList: ["goodaiMini", "goodai_2", "goodai_3", "goodai_4", "goodai_5"],
+          imgList: [
+            "goodaiMini",
+            "goodaiGuanlixt",
+            "goodaiGw",
+            "goodaiSjApp",
+            "goodaiYhdd",
+          ],
         },
-        { name: "普汇健康", imgList: ["zqb"] },
-        { name: "赚钱宝", imgList: ["phjk"] },
+        { name: "普汇健康", imgList: ["phjk"] },
+        { name: "赚钱宝", imgList: ["zqb"] },
         { name: "立刻健康", imgList: ["lkjk"] },
         { name: "organic work", imgList: ["OW"] },
         { name: "金洛克智能锁", imgList: ["jlk"] },
@@ -54,15 +60,16 @@ export default {
       this.isActive = index;
     },
     projectItemClick(name) {
-      console.log(name);
-      this.$router.push({name:'goodaiMini'})
+      if (name == "goodaiGw" || name == "goodaiYhdd") {
+        return false;
+      }
+      this.$router.push({ name });
     },
   },
 };
 </script>
 
 <style lang="less" scope>
-@url-prefix: "https://cdn.jsdelivr.net/gh/18819544753/personal-website@develop/src/assets/images";
 .project_experience {
   position: relative;
   width: 100%;

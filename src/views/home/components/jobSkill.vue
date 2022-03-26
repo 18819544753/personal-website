@@ -31,21 +31,20 @@ export default {
   },
   methods: {
     handleScroll(e) {
-      console.log(document.querySelector(".job_skill>ul").offsetTop);
       let skillListTop = document.querySelector(".job_skill>ul").offsetTop;
-      console.log(e.target.scrollTop);
-      console.log(skillListTop + 300);
       if (
         e.target.scrollTop > skillListTop + 300 &&
         e.target.scrollTop < skillListTop + 400
       ) {
-        console.log('asd');
         document.querySelector(".job_skill>ul").className = "job_skill_list";
       }
     },
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll, true);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.handleScroll, true);
   },
 };
 </script>
@@ -60,7 +59,7 @@ export default {
     position: absolute;
     top: 99px;
     left: 237px;
-    background: url("@{url-prefix}/images/Group_1.png");
+    background: url("@{url-prefix}/Group_1.png");
     background-size: cover;
     height: 140px;
     width: 498px;
