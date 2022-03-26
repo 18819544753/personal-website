@@ -15,14 +15,15 @@
     <div
       v-for="(item, index) in classNameList"
       :key="index"
-      class="goodai_list"
+      class="project_list"
       v-show="isActive == index"
     >
       <div
         v-for="(imgItem, imgIndex) in item.imgList"
         :key="imgIndex"
-        class="goodai_item_one"
-        :style="{ background: `url(${cdnUrl}/${imgItem}.jpg)` }"
+        class="project_item"
+        :style="{ background: `url(${$cdnUrl}/${imgItem}/project.jpg)` }"
+        @click="projectItemClick(imgItem)"
       ></div>
     </div>
   </div>
@@ -33,8 +34,6 @@ export default {
   name: "project_experience",
   data() {
     return {
-      cdnUrl:
-        "https://cdn.jsdelivr.net/gh/18819544753/personal-website@develop/src/assets/images",
       classNameList: [
         {
           name: "冠袋桌球",
@@ -53,10 +52,9 @@ export default {
   methods: {
     navItemClick(index) {
       this.isActive = index;
-      // console.log(document.querySelector(`.goodai_list`).className);
-      // document.querySelector(`.goodai_list`).className = "goodai_list";
-      // document.querySelector(`.goodai_list`).className =
-      //   "goodai_list list_transiton";
+    },
+    projectItemClick(name) {
+      console.log(name);
     },
   },
 };
@@ -101,7 +99,7 @@ export default {
       color: #fff;
     }
   }
-  .goodai_list {
+  .project_list {
     margin: 376px auto 0;
     width: 1200px;
     animation: opacity 1s;
@@ -112,11 +110,7 @@ export default {
     -moz-animation-iteration-count: 1;
     -webkit-animation-iteration-count: 1;
     -o-animation-iteration-count: 1;
-    .goodai_item_one,
-    .goodai_item_two,
-    .goodai_item_three,
-    .goodai_item_four,
-    .goodai_item_five {
+    .project_item {
       cursor: pointer;
       width: 100%;
       height: 500px;
@@ -128,11 +122,7 @@ export default {
       box-shadow: 2px 3px 6px 2px rgba(0, 0, 0, 0.25);
       background-size: cover;
     }
-    .goodai_item_one:hover,
-    .goodai_item_two:hover,
-    .goodai_item_three:hover,
-    .goodai_item_four:hover,
-    .goodai_item_five:hover {
+    .project_item:hover {
       border: 16px solid #5d616d;
     }
   }
