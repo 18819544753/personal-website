@@ -48,7 +48,7 @@ export default {
             "goodaiYhdd",
           ],
         },
-        { name: "普汇健康", imgList: ["phjk"] },
+        { name: "普惠健康", imgList: ["phjk"] },
         { name: "赚钱宝", imgList: ["zqb"] },
         { name: "立刻健康", imgList: ["lkjk"] },
         { name: "organic work", imgList: ["ow"] },

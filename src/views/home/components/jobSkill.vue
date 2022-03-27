@@ -7,6 +7,9 @@
         v-for="(item, index) in btnArray"
         :key="index"
         :class="[item]"
+        :style="{
+          'background-image': `url(${require(`@/assets/images/iconImg/${item}.png`)})`,
+        }"
       ></li>
     </ul>
   </div>
@@ -191,8 +194,8 @@ export default {
       -moz-animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
-      background: url("@{url-prefix}/iconImg/icon1.png");
       background-size: cover;
+      background-repeat: no-repeat;
     }
     .icon2 {
       animation: iconmove2 0.4s;
@@ -207,8 +210,8 @@ export default {
       -moz-animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
-      background: url("@{url-prefix}/iconImg/icon2.png");
       background-size: cover;
+      background-repeat: no-repeat;
     }
     .icon3 {
       animation: iconmove3 0.4s;
@@ -223,8 +226,8 @@ export default {
       -moz-animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
-      background: url("@{url-prefix}/iconImg/icon3.png");
       background-size: cover;
+      background-repeat: no-repeat;
     }
     .icon4 {
       animation: iconmove4 0.4s;
@@ -239,8 +242,8 @@ export default {
       -moz-animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
-      background: url("@{url-prefix}/iconImg/icon4.png");
       background-size: cover;
+      background-repeat: no-repeat;
     }
     .icon5 {
       animation: iconmove5 0.4s;
@@ -255,8 +258,8 @@ export default {
       -moz-animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
-      background: url("@{url-prefix}/iconImg/icon5.png");
       background-size: cover;
+      background-repeat: no-repeat;
     }
     .icon6 {
       animation: iconmove6 0.4s;
@@ -271,8 +274,8 @@ export default {
       -moz-animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
-      background: url("@{url-prefix}/iconImg/icon6.png");
       background-size: cover;
+      background-repeat: no-repeat;
     }
     .icon7 {
       animation: iconmove7 0.4s;
@@ -287,8 +290,8 @@ export default {
       -moz-animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
-      background: url("@{url-prefix}/iconImg/icon7.png");
       background-size: cover;
+      background-repeat: no-repeat;
     }
     .icon8 {
       animation: iconmove8 0.4s;
@@ -303,7 +306,6 @@ export default {
       -moz-animation-fill-mode: forwards;
       -webkit-animation-fill-mode: forwards;
       -o-animation-fill-mode: forwards;
-      background: url("@{url-prefix}/iconImg/icon8.png");
       background-size: cover;
     }
   }

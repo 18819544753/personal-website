@@ -59,6 +59,22 @@ const routes = [{
     name: 'iOOQi',
     component: () => import('../views/iOOQi/index.vue')
   },
+  {
+    path: '/wordEffect ',
+    name: 'wordEffect',
+    component: () => import('../views/wordEffect/index.vue')
+  },
+  {
+    path: '/dynamicEffect ',
+    name: 'dynamicEffect',
+    component: () => import('../views/dynamicEffect/index.vue')
+  },
+  {
+    path: '/illustrator ',
+    name: 'illustrator',
+    component: () => import('../views/illustrator/index.vue')
+  },
+
 ]
 
 const router = new VueRouter({
