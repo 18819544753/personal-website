@@ -22,7 +22,9 @@
         v-for="(imgItem, imgIndex) in item.imgList"
         :key="imgIndex"
         class="project_item"
-        :style="{ background: `url(${$cdnUrl}/project/${imgItem}.jpg)` }"
+        :style="{
+          'background-image': `url(${$cdnUrl}/project/${imgItem}.jpg)`,
+        }"
         @click="projectItemClick(imgItem)"
       ></div>
     </div>
@@ -35,6 +37,7 @@ export default {
   data() {
     return {
       classNameList: [
+        { name: "iOOQi", imgList: ["iOOQi", "yddh"] },
         {
           name: "冠袋桌球",
           imgList: [
@@ -50,7 +53,6 @@ export default {
         { name: "立刻健康", imgList: ["lkjk"] },
         { name: "organic work", imgList: ["ow"] },
         { name: "金洛克智能锁", imgList: ["jlk"] },
-        { name: "WAX", imgList: ["goodaiMini"] },
       ],
       isActive: 0,
     };
@@ -60,7 +62,9 @@ export default {
       this.isActive = index;
     },
     projectItemClick(name) {
-      if (name == "goodaiGw" || name == "goodaiYhdd") {
+      if (name == "goodaiGw" || name == "yddh") {
+        // http://www.phelink.com/
+        window.location.href = "http://www.phelink.com/";
         return false;
       }
       this.$router.push({ name });
@@ -124,6 +128,7 @@ export default {
       height: 500px;
       margin-bottom: 66px;
       background-color: #000000;
+      background-repeat: no-repeat;
       background-size: cover;
       mix-blend-mode: normal;
       border: 16px solid #24262d;

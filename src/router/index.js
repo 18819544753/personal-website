@@ -24,11 +24,11 @@ const routes = [{
     name: 'goodaiSjApp',
     component: () => import('../views/goodaiSjApp/index.vue')
   },
-  // {
-  //   path: '/goodaiYhdd',
-  //   name: 'goodaiYhdd',
-  //   component: () => import('../views/goodaiYhdd/index.vue')
-  // },
+  {
+    path: '/goodaiYhdd',
+    name: 'goodaiYhdd',
+    component: () => import('../views/goodaiYhdd/index.vue')
+  },
   {
     path: '/phjk',
     name: 'phjk',
@@ -50,9 +50,14 @@ const routes = [{
     component: () => import('../views/ow/index.vue')
   },
   {
-    path: '/lkjk',
-    name: 'lkjk',
-    component: () => import('../views/lkjk/index.vue')
+    path: '/jlk',
+    name: 'jlk',
+    component: () => import('../views/jlk/index.vue')
+  },
+  {
+    path: '/iOOQi',
+    name: 'iOOQi',
+    component: () => import('../views/iOOQi/index.vue')
   },
 ]
 
