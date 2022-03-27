@@ -37,7 +37,7 @@ export default {
   data() {
     return {
       classNameList: [
-        { name: "iOOQi", imgList: ["iOOQi", "yddh"] },
+        { name: "iOOQi", imgList: ["asd", "qwe"] },
         {
           name: "冠袋桌球",
           imgList: [
