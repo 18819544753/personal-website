@@ -60,6 +60,11 @@ const routes = [{
     component: () => import('../views/iOOQi/index.vue')
   },
   {
+    path: '/yddh',
+    name: 'yddh',
+    component: () => import('../views/yddh/index.vue')
+  },
+  {
     path: '/wordEffect ',
     name: 'wordEffect',
     component: () => import('../views/wordEffect/index.vue')

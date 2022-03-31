@@ -62,8 +62,7 @@ export default {
       this.isActive = index;
     },
     projectItemClick(name) {
-      if (name == "goodaiGw" || name == "yddh") {
-        // http://www.phelink.com/
+      if (name == "goodaiGw") {
         window.location.href = "http://www.phelink.com/";
         return false;
       }
