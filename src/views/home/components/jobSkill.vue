@@ -43,12 +43,12 @@ export default {
       }
     },
   },
-  mounted() {
-    window.addEventListener("scroll", this.handleScroll, true);
-  },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.handleScroll, true);
-  },
+  // mounted() {
+  //   window.addEventListener("scroll", this.handleScroll, true);
+  // },
+  // beforeDestroy() {
+  //   window.removeEventListener("scroll", this.handleScroll, true);
+  // },
 };
 </script>
 

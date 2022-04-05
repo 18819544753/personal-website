@@ -1,11 +1,11 @@
 <template>
   <div class="home">
     <first-screen />
-    <job-skill />
+    <job-skill ref="jobSkill" />
     <project />
     <other-works />
     <contact-way />
-    <fixedNav />
+    <fixedNav ref="fixedNav" />
   </div>
 </template>
 
@@ -27,9 +27,42 @@ export default {
     fixedNav,
   },
   data() {
-    return {};
+    return {
+      homeTop: 0,
+    };
   },
   methods: {},
+  mounted() {
+    window.addEventListener("scroll", this.$refs.jobSkill.handleScroll, true);
+    window.addEventListener("scroll", this.$refs.fixedNav.handleScroll, true);
+  },
+  activated() {
+    window.addEventListener("scroll", this.$refs.jobSkill.handleScroll, true);
+    window.addEventListener("scroll", this.$refs.fixedNav.handleScroll, true);
+    this.$nextTick(() => {
+      document.body.scrollTop = this.$homeScroll;
+    });
+  },
+  beforeDestroy() {
+    window.addEventListener("scroll", this.$refs.jobSkill.handleScroll, true);
+    window.addEventListener("scroll", this.$refs.fixedNav.handleScroll, true);
+  },
+  beforeRouteLeave(to, from, next) {
+    window.removeEventListener(
+      "scroll",
+      this.$refs.jobSkill.handleScroll,
+      true
+    );
+    window.removeEventListener(
+      "scroll",
+      this.$refs.fixedNav.handleScroll,
+      true
+    );
+    //全局变量homeScroll默认为0 离开页面时 记录当前的页面滚动值
+    this.$homeScroll =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    next();
+  },
 };
 </script>
 
@@ -37,7 +70,7 @@ export default {
 .home {
   position: relative;
   width: 100%;
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
   // height: 100%;
   background-color: #030910;
 }
