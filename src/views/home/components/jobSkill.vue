@@ -62,7 +62,7 @@ export default {
     position: absolute;
     top: 99px;
     left: 237px;
-    background: url("@{url-prefix}/Group_1.png");
+    background: url("../../../assets/images/Group_1.png");
     background-size: cover;
     height: 140px;
     width: 498px;
