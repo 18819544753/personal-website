@@ -1,6 +1,6 @@
 <template>
   <div class="goodaiSjApp">
-    <img :src="`${$cdnUrl}/goodaiSjApp/goodaiSjApp.jpg`" />
+    <img :src="`${$cdnUrl}/goodaiSjApp/goodaiSjApp.jpeg`" />
   </div>
 </template>
 
