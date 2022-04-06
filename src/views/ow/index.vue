@@ -1,7 +1,6 @@
 <template>
   <div class="ow">
-    <img :src="`${$cdnUrl}/ow/ow_1.jpg`" />
-    <img :src="`${$cdnUrl}/ow/ow_2.jpg`" />
+    <img :src="`${$cdnUrl}/ow/ow.jpg`" />
   </div>
 </template>
 
