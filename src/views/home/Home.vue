@@ -6,6 +6,11 @@
     <other-works />
     <contact-way />
     <fixedNav ref="fixedNav" />
+    <div class="beian">
+      <a href="http://beian.miit.gov.cn/" target="_blank"
+        >粤ICP备2021064501号</a
+      >
+    </div>
   </div>
 </template>
 
@@ -111,6 +116,18 @@ export default {
   }
   100% {
     transform: scale(1);
+  }
+}
+.beian {
+  position: absolute;
+  bottom: 0;
+  background-color: #030910;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  a:hover {
+    color: orange;
   }
 }
 </style>
